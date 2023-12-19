@@ -55,7 +55,7 @@ const LoginForm = () => {
             <input
               type="checkbox"
               id="remember-me"
-              checked
+              
               style={{ height: "12px;" }}
             ></input>
             <label
