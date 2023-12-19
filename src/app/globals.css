@@ -1,27 +1,89 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0px;
+  transition: 0.5s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text-box {
+  width: 420px;
+  height: 45px;
+  border-radius: 5px;
+  padding: 13px, 10px, 13px, 10px;
+  border: 1px solid #ded2d9;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding-left: 10px;
 }
-
+.text-box:hover {
+  border: 1px solid #7f265b;
+}
+.text-box:focus {
+  outline: 1px solid #7f265b;
+}
+::placeholder {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-left: 10px;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  padding: 0;
+  background-image: linear-gradient(to right, #ffd09a, #ffffff);
+}
+.login-btn {
+  margin-top: 15px;
+  background-color: #7f265b;
+  color: white;
+  padding: 13px, 10px, 12px, 10px;
+  border-radius: 6px;
+  width: 435px;
+  border: 0px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 24.55px;
+  font-weight: 800;
+}
+.login-btn:hover {
+  cursor: pointer;
+  background-color: #5f1c44;
+}
+a {
+  text-decoration: none;
+  color: #7f265b;
+  font-size: 12px;
+}
+.google {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #939393;
+}
+.google:hover {
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+.signin-email {
+  color: #a1a1a1;
+  text-align: center;
+  font-weight: 600;
+  line-height: 16.37px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.signin-email:hover {
+  cursor: pointer;
+}
+.forgot-password:hover {
+  text-decoration: underline;
 }
